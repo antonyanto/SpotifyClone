@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ChoiceComponent } from './choice.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ChoiceComponent
+  },
+  {
+    path: 'spotify',
+    loadChildren: () => import ('../spotify/spotify.module').then(m => m.SpotifyModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import ('../form/form.module').then(m => m.FormModule)
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class ChoiceRoutingModule { }

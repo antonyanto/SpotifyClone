@@ -1,0 +1,13 @@
+<div class="center_form">
+  <div id="form_fields">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" [(ngModel)]="f_name" ngDefaultControl> <br>
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" [(ngModel)]="l_name" ngDefaultControl> <br>
+    <label for="email">E-mail</label>
+    <input type="text" id="email" name="email" [(ngModel)]="email" ngDefaultControl> <br>
+    <label for="mobile">Mobile</label> <br>
+    <input id="mobile" type="text" [(ngModel)]="mobile" ngDefaultControl> <br>
+    <input type="button" value="SUBMIT" (click)="sendDataToParent()">
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.display_flex {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("/assets/images/bg_form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+app-left-component {
+  outline: 3px solid #fff;
+  padding: 10px;
+}
+
+app-right-component {
+  outline: 3px solid #fff;
+  padding: 10px;
+}
+
+@media(max-width: 670px) {
+  .display_flex {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="center_form">
+  <div id="form_fields">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" [value]="getValues[0]" *ngIf="getValues[0] !== undefined"> <br>
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" [value]="getValues[1]" *ngIf="getValues[1] !== undefined"> <br>
+    <label for="email">E-mail</label>
+    <input type="text" id="email" name="email" [value]="getValues[2]" *ngIf="getValues[2] !== undefined"> <br>
+    <label for="mobile">Mobile</label> <br>
+    <input id="mobile" type="text" [value]="getValues[3]" *ngIf="getValues[3] !== undefined"> <br>
+  </div>
+</div>

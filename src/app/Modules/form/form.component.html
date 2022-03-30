@@ -1,0 +1,4 @@
+<div class="display_flex">
+  <app-left-component (toParent)="receiveDataFromChild($event)"></app-left-component>
+  <app-right-component [getValues]="formValues"></app-right-component>
+</div>
